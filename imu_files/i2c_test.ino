@@ -1,3 +1,4 @@
+// Script to test ESP32 + IMU Wiring
 #include <Wire.h>
 
 
@@ -26,15 +27,12 @@ for (address = 1; address < 127; address++) {
 Wire.beginTransmission(address);
 error = Wire.endTransmission();
 
-```
 if (error == 0) {
   Serial.print("Device found at 0x");
   if (address < 16) Serial.print("0");
   Serial.println(address, HEX);
   count++;
 }
-```
-
 }
 
 if (count == 0) {
