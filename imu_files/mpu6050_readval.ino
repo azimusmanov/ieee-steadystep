@@ -19,7 +19,7 @@
 // Still → near 0
 // Move → spikes
 
-#define MPU_ADDR 0x68
+#define MPU_ADDR 0x40
 #define ACCEL_SCALE 16384.0  // LSB/g for ±2g range
 #define G_TO_MS2   9.81      // m/s² per g
 #define GYRO_SCALE 131.0     // LSB/(°/s) for ±250°/s range

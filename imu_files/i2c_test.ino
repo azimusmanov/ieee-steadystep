@@ -14,7 +14,8 @@ Serial.begin(115200);
 delay(1000);
 Serial.println("\nI2C Scanner");
 
-Wire.begin(21, 22); // SDA, SCL
+Wire.begin(21, 22);
+Wire.setClock(50000);
 }
 
 void loop() {
